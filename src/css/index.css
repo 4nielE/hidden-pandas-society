@@ -259,9 +259,12 @@ body {
   align-items: center;
   width: 300px;
   height: 300px;
-  background-color: purple;
   border-radius: 15px;
   border: 5px solid #2e2e2e;
+}
+
+#grid-text-small-screen {
+  display: none;
 }
 
 #grid-item-none-1or3 {
@@ -383,7 +386,6 @@ body {
   min-height: 140px;
   height: 160px;
   width: 35vw;
-  /*background-color: rgba(109, 7, 168, 0.8);*/
   background-color: #2e2e2eda;
   padding: 20px;
   border-radius: 30px;
@@ -704,6 +706,22 @@ body {
   max-height: 30px;
   cursor: pointer;
   text-decoration: none;
+}
+
+/****************************** FAQ *******************************/
+
+#faq-container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.row-title-text {
+  text-align: left;
+}
+
+.styles_row-content__QOGZd.row-content.styles_animate__3ecdr {
+  width: auto;
+  text-align: left;
 }
 
 /****************************** MINT ******************************/
@@ -1042,6 +1060,16 @@ button {
     max-height: 120px;
   }
 
+  #grid-text-small-screen {
+    display: flex;
+    font-family: 'DM Sans';
+    font-size: 25px;
+    font-style: italic;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: #000;
+  }
+
   #grid-item-none-2,
   #grid-item-none-1or3 {
     display: none;
@@ -1234,6 +1262,23 @@ button {
     margin-top: 20px;
   }
 
+  #team-individual-card {
+    width: 180px;
+    height: 280px;
+  }
+
+  #team-individual-img-1,
+  #team-individual-img-2,
+  #team-individual-img-3,
+  #team-individual-img-4,
+  #team-individual-img-5,
+  #team-individual-img-6,
+  #team-individual-img-7,
+  #team-individual-img-8 {
+    width: 180px;
+    height: 180px;
+  }
+
   #minting-row {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1253,7 +1298,7 @@ button {
   }
 
   #team-individual-card {
-    width: 140px;
+    width: 150px;
     height: 270px;
   }
 
@@ -1265,8 +1310,8 @@ button {
   #team-individual-img-6,
   #team-individual-img-7,
   #team-individual-img-8 {
-    width: 140px;
-    height: 140px;
+    width: 150px;
+    height: 150px;
   }
 
   #image-minting-card {

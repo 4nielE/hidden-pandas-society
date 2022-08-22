@@ -88,6 +88,12 @@ function Home() {
     // **************************
     // *     Style Variables    *
     // **************************
+    const styleGridItemNone1or3 = {
+        paddingRight: "10px",
+        fontStyle: "italic",
+        fontSize: "35px"
+    }
+
     const styleGridItem1 = {
         backgroundImage: `url(${coin})`,
         backgroundSize: 'contain',
@@ -161,7 +167,7 @@ function Home() {
         rows: [
             {
                 title: "What are Hidden Pandas Society?",
-                content: "They are hidden for a reason."
+                content: "It's hidden for a reason."
             },
             {
                 title: "What chain is Hidden Pandas Society?",
@@ -337,7 +343,7 @@ function Home() {
             <div id="grid-container">
                 <div id="grid-row-1">
                     <div id="grid-item-none-1or3">
-                        {isHovering1 && <h2 style={{ paddingRight: "10px", fontStyle: "italic", fontSize: "35px" }}>
+                        {isHovering1 && <h2 style={styleGridItemNone1or3}>
                             <MovingComponent
                                 type="fadeInFromRight"
                                 duration="500ms"
@@ -352,9 +358,10 @@ function Home() {
                     </div>
                     <div id="grid-item" onMouseOver={handleMouseOver1} onMouseOut={handleMouseOut1}
                         style={styleGridItem1}>
+                        <h2 id="grid-text-small-screen">Airdrop</h2>
                     </div>
                     <div id="grid-item-none-1or3">
-                        {isHovering2 && <h2 style={{ paddingRight: "10px", fontStyle: "italic", fontSize: "35px" }}>
+                        {isHovering2 && <h2 style={styleGridItemNone1or3}>
                             <MovingComponent
                                 type="fadeInFromRight"
                                 duration="500ms"
@@ -369,14 +376,16 @@ function Home() {
                     </div>
                     <div id="grid-item" onMouseOver={handleMouseOver2} onMouseOut={handleMouseOut2}
                         style={styleGridItem2}>
+                        <h2 id="grid-text-small-screen">Mystery</h2>
                     </div>
                 </div>
                 <div id="grid-row-2">
                     <div id="grid-item" onMouseOver={handleMouseOver3} onMouseOut={handleMouseOut3}
                         style={styleGridItem3}>
+                        <h2 id="grid-text-small-screen">Community</h2>
                     </div>
                     <div id="grid-item-none-2">
-                        {isHovering3 && <h2 style={{ paddingLeft: "10px", fontStyle: "italic", fontSize: "35px" }}>
+                        {isHovering3 && <h2 style={styleGridItemNone1or3}>
                             <MovingComponent
                                 type="fadeInFromLeft"
                                 duration="500ms"
@@ -391,9 +400,10 @@ function Home() {
                     </div>
                     <div id="grid-item" onMouseOver={handleMouseOver4} onMouseOut={handleMouseOut4}
                         style={styleGridItem4}>
+                        <h2 id="grid-text-small-screen">Wardrobe</h2>
                     </div>
                     <div id="grid-item-none-2">
-                        {isHovering4 && <h2 style={{ paddingLeft: "10px", fontStyle: "italic", fontSize: "35px" }}>
+                        {isHovering4 && <h2 style={styleGridItemNone1or3}>
                             <MovingComponent
                                 type="fadeInFromLeft"
                                 duration="500ms"
@@ -409,7 +419,7 @@ function Home() {
                 </div>
                 <div id="grid-row-3">
                     <div id="grid-item-none-1or3">
-                        {isHovering5 && <h2 style={{ paddingRight: "10px", fontStyle: "italic", fontSize: "35px" }}>
+                        {isHovering5 && <h2 style={styleGridItemNone1or3}>
                             <MovingComponent
                                 type="fadeInFromRight"
                                 duration="500ms"
@@ -424,9 +434,10 @@ function Home() {
                     </div>
                     <div id="grid-item" onMouseOver={handleMouseOver5} onMouseOut={handleMouseOut5}
                         style={styleGridItem5}>
+                        <h2 id="grid-text-small-screen">Box</h2>
                     </div>
                     <div id="grid-item-none-1or3">
-                        {isHovering6 && <h2 style={{ paddingRight: "10px", fontStyle: "italic", fontSize: "35px" }}>
+                        {isHovering6 && <h2 style={styleGridItemNone1or3}>
                             <MovingComponent
                                 type="fadeInFromRight"
                                 duration="500ms"
@@ -441,6 +452,7 @@ function Home() {
                     </div>
                     <div id="grid-item" onMouseOver={handleMouseOver6} onMouseOut={handleMouseOut6}
                         style={styleGridItem6}>
+                        <h2 id="grid-text-small-screen">Society</h2>
                     </div>
                 </div>
             </div>

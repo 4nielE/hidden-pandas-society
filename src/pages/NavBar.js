@@ -1,9 +1,14 @@
+// React imports
 import React, { useState } from "react";
+
+// Packages imports
 import { Link } from 'react-router-dom';
+import Hamburger from 'hamburger-react'
+
+// Images imports
 import twitter from '../img/twitter_40.png';
 import discord from '../img/discord_40.png';
 import opensea from '../img/opensea_40.png';
-import Hamburger from 'hamburger-react'
 
 function NavBar() {
     // **************************

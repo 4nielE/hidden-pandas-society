@@ -1,12 +1,17 @@
+// CSS imports
 import './App.css';
+
+// JS imports
 import Home from './pages/Home.js';
 import Vision from './pages/Vision.js';
 import Team from './pages/Team.js';
 import FAQ from './pages/FAQ.js';
 import Mint from './pages/Mint.js';
-import { Route, Routes } from "react-router-dom"
 import NavBar from './pages/NavBar.js';
 import Footer from './pages/Footer.js';
+
+// Packages imports
+import { Route, Routes } from "react-router-dom"
 
 function App() {
   return (
