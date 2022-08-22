@@ -16,6 +16,7 @@ body {
   width: 95vw;
   font-size: 14px;
   font-weight: bold;
+  overflow-x: hidden;
 }
 
 /****************************** NAVIGATION ******************************/
@@ -315,6 +316,7 @@ body {
   background-color: transparent;
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 #hero-vision-section {
@@ -322,6 +324,7 @@ body {
   flex-direction: row;
   justify-content: center;
   margin-top: 50px;
+  width: 100%;
 }
 
 #hero-img-vision-card {
@@ -345,12 +348,17 @@ body {
   font-weight: medium;
 }
 
+#content-vision-section {
+  max-width: 100%;
+}
+
 #h1-vision {
   color: rgb(46, 46, 46);
   text-align: left;
   margin: 0px;
   font-weight: bold;
   font-size: 35px;
+  width: 100%;
 }
 
 #h2-vision {
@@ -358,6 +366,24 @@ body {
   text-align: left;
   margin: 0 0 15px 0;
   font-size: 28px;
+  width: 100%;
+}
+
+#h1-vision-middle-title {
+  color: rgb(46, 46, 46);
+  text-align: center;
+  margin: 0px;
+  font-weight: bold;
+  font-size: 35px;
+  width: 100%;
+}
+
+#h2-vision-middle-subtitle {
+  color: rgba(46, 46, 46, 0.62);
+  text-align: center;
+  margin: 0 0 15px 0;
+  font-size: 28px;
+  width: 100%;
 }
 
 #p-vision {
@@ -368,16 +394,28 @@ body {
 }
 
 #content-vision-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
   margin-top: 70px;
-  margin-left: 120px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+#content-vision-4-benefits {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #content-vision-4-benefits-row {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  padding: 0 70px;
+  align-items: center;
+  padding: 0 0;
   margin: 60px 0;
 }
 
@@ -456,7 +494,7 @@ body {
 }
 
 #marquee {
-  width: 100vw;
+  width: 110%;
   margin-bottom: 60px;
 }
 
@@ -924,7 +962,7 @@ button {
   }
 
   #content-vision-4-benefits-row {
-    padding: 0;
+    width: 100%;
   }
 
   #team-individual-card {
@@ -1019,15 +1057,17 @@ button {
     margin-left: auto;
     margin-right: auto;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
+    max-width: 100%;
   }
 
   #home-image-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin-left: auto;
     margin-right: auto;
     align-items: center;
+    max-width: 90%;
   }
 
   #welcome-container {
@@ -1083,7 +1123,7 @@ button {
 
   #hero-vision-section {
     flex-direction: column;
-    width: 97vw;
+    width: 100%;
     justify-content: center;
     align-items: center;
   }
@@ -1111,7 +1151,7 @@ button {
     justify-content: center;
     align-items: center;
     padding: 0;
-    width: 97vw;
+    width: 100%;
   }
 
   #content-vision-title {
@@ -1119,7 +1159,6 @@ button {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    margin-left: 0px;
   }
 
   #h1-vision {
@@ -1135,18 +1174,21 @@ button {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: fit-content;
+    width: 100%;
     margin-top: 30px;
   }
 
   #content-vision-benefit {
-    width: 97vw;
+    width: 35%;
     min-width: 290px;
     min-height: 173px;
     max-width: 458px;
     margin: 0 0 20px 0;
     height: fit-content;
     padding: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
 
   #content-vision-4-benefits-row {
@@ -1155,6 +1197,7 @@ button {
     align-items: center;
     padding: 0 0;
     margin: 0 0;
+    width: 100%;
   }
 
   #content-vision-benefit-item {
@@ -1185,20 +1228,24 @@ button {
 
 @media screen and (max-width: 991px) {
   #content-vision-4-benefits-row {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding: 0;
+    width: 100%;
   }
 
   #content-vision-benefit {
     width: 40vw;
   }
 
+  #header-team {
+    width: 100%;
+  }
+
   #hero-team-title {
-    width: 95vw;
+    width: 100%;
   }
 
   #team-row {
-    width: 95vw;
+    width: 95%;
   }
 
   #team-individual-card {
@@ -1218,6 +1265,11 @@ button {
     height: 170px;
   }
 
+  #header-mint {
+    width: 100%;
+  }
+
+
   #image-minting-card {
     width: 350px;
     height: 250px;
@@ -1226,6 +1278,10 @@ button {
   #minting-card {
     width: 350px;
     height: 250px;
+  }
+
+  #footer {
+    width: 100%;
   }
 }
 

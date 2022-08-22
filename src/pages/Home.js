@@ -332,7 +332,8 @@ function Home() {
                         <div id="home-image-left"></div>
                         <div id="home-image-center"></div>
                         <div id="home-image-right"></div>
-                    </MovingComponent></div>
+                    </MovingComponent>
+                </div>
             </div>
             <div id="welcome-container">
                 <h1 id="welcome-text">
@@ -470,8 +471,8 @@ function Home() {
                 </div>
                 <div id="content-vision-section">
                     <div id="content-vision-title">
-                        <h1 id="h1-vision">What that means.</h1>
-                        <h2 id="h2-vision">Tangible benefits.</h2>
+                        <h1 id="h1-vision-middle-title">What that means.</h1>
+                        <h2 id="h2-vision-middle-subtitle">Tangible benefits.</h2>
                     </div>
                     <div id="content-vision-4-benefits">
                         <div id="content-vision-4-benefits-row">
