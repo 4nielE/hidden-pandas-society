@@ -54,7 +54,7 @@ function NavBar() {
     return (
         <div id="navigation">
             <div id="logo">
-                <Link id="nav-bar-item-logo" to='/' style={{ textDecoration: 'none' }}>🐼 Hidden Pandas Society</Link>
+                <Link id="nav-bar-item-logo" to='/home' style={{ textDecoration: 'none' }}>🐼 Hidden Pandas Society</Link>
             </div>
             <div id="nav-bar">
                 <nav>
