@@ -13,15 +13,15 @@ function FAQ() {
         rows: [
             {
                 title: "What are Hidden Pandas Society?",
-                content: "It's hidden for a reason."
+                content: "Hidden Pandas Society is a the first step of a long term vision of virtual assets. Early adopters will be rewarded with several and secret assets to be determined in the near future."
             },
             {
                 title: "What chain is Hidden Pandas Society?",
-                content: "Ethereum"
+                content: "Note that this is a Test NFT. Thus, the chain is on Goerli Ethereum."
             },
             {
                 title: "When is the mint?",
-                content: "TBA"
+                content: "Mint is LIVE!"
             },
             {
                 title: "How much do each Panda cost?",
@@ -29,15 +29,15 @@ function FAQ() {
             },
             {
                 title: "Is there utility?",
-                content: "lol! no"
+                content: "Utilities of the NFTs will be announced when mint has terminated."
             },
             {
                 title: "Is there a roadmap?",
-                content: "lol! no"
+                content: "Yes. Please constantly check our twitter and/or discord."
             },
             {
                 title: "What's the contract address?",
-                content: "0xhereisthecontract"
+                content: "0x756688Dce086cBEddaAD5aEA41E7460fC1f1c12B"
             }]
     }
 
