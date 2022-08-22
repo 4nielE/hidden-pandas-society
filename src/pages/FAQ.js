@@ -12,8 +12,8 @@ function FAQ() {
         title: "FAQ",
         rows: [
             {
-                title: "What are Hidden Pandas Society?What are Hidden Pandas Society?What are Hidden Pandas Society?What are Hidden Pandas Society?",
-                content: "It's hidden for a reason. It's hidden for a reason. It's hidden for a reason. It's hidden for a reason."
+                title: "What are Hidden Pandas Society?",
+                content: "It's hidden for a reason."
             },
             {
                 title: "What chain is Hidden Pandas Society?",
