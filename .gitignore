@@ -15,7 +15,6 @@
 /scripts
 /artifacts
 /cache
-/contracts
 
 # misc
 .DS_Store

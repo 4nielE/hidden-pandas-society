@@ -6,8 +6,14 @@ import opensea from '../img/opensea_40.png';
 import Hamburger from 'hamburger-react'
 
 function NavBar() {
+    // **************************
+    // *     State Variables    *
+    // **************************
     const [isOpen, setOpen] = useState(false)
 
+    // **************************
+    // *     Style Variables    *
+    // **************************
     const socialStyleTwitter = {
         backgroundImage: `url(${twitter})`,
         textDecoration: 'none',
@@ -32,6 +38,9 @@ function NavBar() {
         backgroundPosition: 'center'
     }
 
+    // **************************
+    // *  Animations Functions  *
+    // **************************
     function toggleMenu() {
         if (isOpen == true) {
             return (
@@ -50,6 +59,9 @@ function NavBar() {
             );
         }
     }
+
+    /*************************** RENDERING ******************************/
+    /*************************** RENDERING ******************************/
 
     return (
         <div id="navigation">

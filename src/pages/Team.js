@@ -1,8 +1,16 @@
+// React imports
 import React from "react";
+
+// Packages imports
 import { Link } from 'react-router-dom';
+
+// Images imports
 import twitter from '../img/twitter_40.png';
 
 function Team() {
+    // **************************
+    // *     Style Variables    *
+    // **************************
     const socialStyleTwitter = {
         backgroundImage: `url(${twitter})`,
         textDecoration: 'none',
@@ -10,6 +18,9 @@ function Team() {
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center'
     }
+
+    /*************************** RENDERING ******************************/
+    /*************************** RENDERING ******************************/
 
     return (
         <div id="header-team">

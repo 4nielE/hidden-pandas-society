@@ -1,5 +1,7 @@
+// React imports
 import React, { useEffect, useState } from "react";
-import mintImg from '../img/imgmint.png';
+
+// Web3 imports
 import {
   contract,
   connectWallet,
@@ -9,7 +11,9 @@ import {
 } from "../util/interact.js";
 
 const Mint = () => {
-  //state variables
+  // **************************
+  // *     Style Variables    *
+  // **************************
   const [walletAddress, setWallet] = useState("");
   const [status, setStatus] = useState("");
   const [maxMintPerWallet, setMaxMintPerWallet] = useState(2);
@@ -17,7 +21,9 @@ const Mint = () => {
   const [_amountMinted, set_amountMinted] = useState();
   const [_maxSupply, set_maxSupply] = useState(100);
 
-  //called only once
+  // **************************
+  // *       Use Effect       *
+  // **************************
   useEffect(async () => {
     async function fetchCurrentAmountMinted() {
       const _curAmountMinted = await loadAmountMinted();
@@ -36,6 +42,9 @@ const Mint = () => {
 
   }, []);
 
+  // **************************
+  // *    Wallet functions    *
+  // **************************
   function currentAmountMintedListener() {
     contract.events.AmountMinted({}, (error, data) => {
       if (error) {
@@ -78,23 +87,19 @@ const Mint = () => {
     setWallet(walletResponse.address);
   };
 
-  /*const connectWalletPressed = async () => {
-    if (walletAddress == "") {
-      const walletResponse = await connectWallet();
-      setStatus(walletResponse.status);
-      setWallet(walletResponse.address);
-    } else {
-      setStatus("👍 Connected");
-      setWallet(0);
-    }
-  };*/
+  const onMintPressed = async (e) => {
+    e.preventDefault();
+    await mint(walletAddress, count);
+  }
 
+  // Front-end functions
   function incrementCount() {
     if (count < maxMintPerWallet) {
       count = count + 1;
       setCount(count);
     }
   }
+
   function decrementCount() {
     if (count > 1) {
       count = count - 1;
@@ -102,12 +107,9 @@ const Mint = () => {
     }
   }
 
-  const onMintPressed = async (e) => {
-    e.preventDefault();
-    await mint(walletAddress, count);
-  }
+  /*************************** SEPARATOR ******************************/
+  /*************************** SEPARATOR ******************************/
 
-  //the UI of our component
   return (
     <div id="header-mint">
       <div id="minting-row">

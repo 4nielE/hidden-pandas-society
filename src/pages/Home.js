@@ -1,15 +1,23 @@
+// React imports
 import React, { useState, useEffect } from "react";
+
+// Packages imports
+import Marquee from "react-fast-marquee";
+import MovingComponent from "react-moving-text";
+import Faq from 'react-faq-component';
+import { Link } from 'react-router-dom';
+
+// Images imports
 import coin from '../img/coin.png';
 import box from '../img/box.png';
 import wardrobe from '../img/wardrobe.png';
 import community from '../img/community.png';
 import mystery from '../img/mystery.png';
 import society from '../img/society.png';
-import MovingComponent from "react-moving-text";
-import Faq from 'react-faq-component';
 import imgvision from '../img/imgvision.png';
-import { Link } from 'react-router-dom';
 import twitter from '../img/twitter_40.png';
+
+// Web3 imports
 import {
     contract,
     connectWallet,
@@ -17,9 +25,11 @@ import {
     mint,
     loadAmountMinted
 } from "../util/interact.js";
-import Marquee from "react-fast-marquee";
 
 function Home() {
+    // **************************
+    // *  Animations Variables  *
+    // **************************
     const [isHovering1, setIsHovering1] = useState(false);
     const [isHovering2, setIsHovering2] = useState(false);
     const [isHovering3, setIsHovering3] = useState(false);
@@ -75,6 +85,9 @@ function Home() {
         setIsHovering6(false);
     };
 
+    // **************************
+    // *     Style Variables    *
+    // **************************
     const styleGridItem1 = {
         backgroundImage: `url(${coin})`,
         backgroundSize: 'contain',
@@ -123,6 +136,26 @@ function Home() {
         backgroundColor: '#6D07A8'
     }
 
+    // Vision
+    const styleImgVision = {
+        backgroundImage: `url(${imgvision})`,
+        backgroundSize: 'cover',
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: 'center'
+    }
+
+    // Team
+    const socialStyleTwitter = {
+        backgroundImage: `url(${twitter})`,
+        textDecoration: 'none',
+        backgroundSize: 'contain',
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: 'center'
+    }
+
+    // **************************
+    // *      FAQ Variable      *
+    // **************************
     const dataFAQ = {
         title: "FAQ",
         rows: [
@@ -171,22 +204,14 @@ function Home() {
         // tabFocus: true
     };
 
-    const styleImgVision = {
-        backgroundImage: `url(${imgvision})`,
-        backgroundSize: 'cover',
-        backgroundRepeat: 'no-repeat',
-        backgroundPosition: 'center'
-    }
+    // **************************
+    // *    Images Variables    *
+    // **************************
 
-    const socialStyleTwitter = {
-        backgroundImage: `url(${twitter})`,
-        textDecoration: 'none',
-        backgroundSize: 'contain',
-        backgroundRepeat: 'no-repeat',
-        backgroundPosition: 'center'
-    }
 
-    //state variables
+    // **************************
+    // *     State Variables    *
+    // **************************
     const [walletAddress, setWallet] = useState("");
     const [status, setStatus] = useState("");
     const [maxMintPerWallet, setMaxMintPerWallet] = useState(2);
@@ -194,7 +219,9 @@ function Home() {
     const [_amountMinted, set_amountMinted] = useState(0);
     const [_maxSupply, set_maxSupply] = useState(100);
 
-    //called only once
+    // **************************
+    // *       Use Effect       *
+    // **************************
     useEffect(async () => {
         async function fetchCurrentAmountMinted() {
             const _curAmountMinted = await loadAmountMinted();
@@ -210,9 +237,11 @@ function Home() {
         }
         fetchWallet();
         addWalletListener();
-
     }, []);
 
+    // **************************
+    // *    Wallet functions    *
+    // **************************
     function currentAmountMintedListener() {
         contract.events.AmountMinted({}, (error, data) => {
             if (error) {
@@ -255,12 +284,21 @@ function Home() {
         setWallet(walletResponse.address);
     };
 
+    const onMintPressed = async () => {
+        const { status } = await mint(walletAddress, count);
+        setStatus(status);
+    };
+
+    // **************************
+    // *  Front-end functions   *
+    // **************************
     function incrementCount() {
         if (count < maxMintPerWallet) {
             count = count + 1;
             setCount(count);
         }
     }
+
     function decrementCount() {
         if (count > 1) {
             count = count - 1;
@@ -268,33 +306,8 @@ function Home() {
         }
     }
 
-    const onMintPressed = async () => {
-        const { status } = await mint(walletAddress, count);
-        setStatus(status);
-    };
-
-    /*********************************************************/
-    /*********************************************************/
-    /*********************************************************/
-    /*********************************************************/
-    /*********************************************************/
-    /*********************************************************/
-    /*********************************************************/
-    /*********************************************************/
-    /*********************************************************/
-    /*********************************************************/
-    /*********************************************************/
-    /*********************************************************/
-    /*********************************************************/
-    /*********************************************************/
-    /*********************************************************/
-    /*********************************************************/
-    /*********************************************************/
-    /*********************************************************/
-    /*********************************************************/
-
-
-
+    /*************************** RENDERING ******************************/
+    /*************************** RENDERING ******************************/
 
     return (
         <div id="header-home" >

@@ -1,10 +1,18 @@
+// React imports
 import React from "react";
+
+// Packages imports
 import { Link } from 'react-router-dom';
+
+// Images imports
 import twitter from '../img/twitter_40.png';
 import discord from '../img/discord_40.png';
 import opensea from '../img/opensea_40.png';
 
 function Footer() {
+    // **************************
+    // *     Style Variables    *
+    // **************************
     const socialStyleTwitter = {
         backgroundImage: `url(${twitter})`,
         textDecoration: 'none',
@@ -28,6 +36,9 @@ function Footer() {
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center'
     }
+
+    /*************************** RENDERING ******************************/
+    /*************************** RENDERING ******************************/
 
     return (
         <div id="footer">

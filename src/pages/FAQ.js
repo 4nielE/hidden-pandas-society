@@ -2,6 +2,9 @@ import React from 'react';
 import Faq from 'react-faq-component';
 
 function FAQ() {
+    // **************************
+    // *      FAQ Variable      *
+    // **************************
     const dataFAQ = {
         title: "FAQ",
         rows: [
@@ -40,8 +43,6 @@ function FAQ() {
         titleTextColor: "#000",
         rowTitleColor: "#000",
         rowContentColor: "#2e2e2e",
-        // rowContentColor: 'grey',
-        // arrowColor: "red",
     };
 
     const configFAQ = {
@@ -49,6 +50,9 @@ function FAQ() {
         // arrowIcon: "V",
         // tabFocus: true
     };
+
+    /*************************** RENDERING ******************************/
+    /*************************** RENDERING ******************************/
 
     return (
         <div id="faq-container">

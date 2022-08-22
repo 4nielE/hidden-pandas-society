@@ -1,13 +1,22 @@
+// React imports
 import React from "react";
+
+// Images imports
 import imgvision from '../img/imgvision.png';
 
 function Vision() {
+    // **************************
+    // *     Style Variables    *
+    // **************************
     const styleImgVision = {
         backgroundImage: `url(${imgvision})`,
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center'
     }
+
+    /*************************** RENDERING ******************************/
+    /*************************** RENDERING ******************************/
 
     return (
         <div id="header-vision">
