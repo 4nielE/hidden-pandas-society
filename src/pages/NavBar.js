@@ -36,7 +36,7 @@ function NavBar() {
         if (isOpen == true) {
             return (
                 <div id="bgr-nav-bar">
-                    <Link id="bgr-nav-bar-item" to='/'>Home</Link>
+                    <Link id="bgr-nav-bar-item" to='/home'>Home</Link>
                     <Link id="bgr-nav-bar-item" to='/vision'>Vision</Link>
                     <Link id="bgr-nav-bar-item" to='/team'>Team</Link>
                     <Link id="bgr-nav-bar-item" to='/faq'>FAQ</Link>
@@ -59,7 +59,7 @@ function NavBar() {
             <div id="nav-bar">
                 <nav>
                     <ul>
-                        <Link id="nav-bar-item" to='/'>Home</Link>
+                        <Link id="nav-bar-item" to='/home'>Home</Link>
                         <Link id="nav-bar-item" to='/vision'>Vision</Link>
                         <Link id="nav-bar-item" to='/team'>Team</Link>
                         <Link id="nav-bar-item" to='/faq'>FAQ</Link>
