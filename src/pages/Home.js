@@ -191,7 +191,7 @@ function Home() {
             },
             {
                 title: "What's the contract address?",
-                content: "0x756688Dce086cBEddaAD5aEA41E7460fC1f1c12B"
+                content: "0x090AaB9C0C178Dfc8df46fdE3696bF551da8f9AD"
             }]
     }
 
