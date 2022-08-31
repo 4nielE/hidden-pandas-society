@@ -96,7 +96,6 @@ export const getCurrentWalletConnected = async () => {
 
 export const mint = async (address, amount) => {
 
-    console.log("version: " + web3.version);
     if (!window.ethereum || address === null) {
         return {
             status:
@@ -105,7 +104,8 @@ export const mint = async (address, amount) => {
     }
 
     //set up cost for hex value
-    const cost = amount * 0.003 * 10 ** 18;
+    const smCostMint = await contract.methods.cost().call();
+    const cost = amount * smCostMint;
 
     //set up transaction parameters
     const transactionParameters = {
