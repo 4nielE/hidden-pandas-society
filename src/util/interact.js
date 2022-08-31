@@ -104,11 +104,15 @@ export const mint = async (address, amount) => {
         };
     }
 
+    //set up cost for hex value
+    const cost = amount * 0.003 * 10 ** 18;
+
     //set up transaction parameters
     const transactionParameters = {
         to: contract_address, // Required except during contract publications.
         from: address, // must match user's active address.
         data: contract.methods.mint(amount).encodeABI(),
+        value: cost.toString(16),
     };
 
     //sign the transaction
