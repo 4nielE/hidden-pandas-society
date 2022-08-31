@@ -642,7 +642,7 @@ function Home() {
                         </button>
                         <div id="minting-section">
                             <div id="supply-left">
-                                <p>FREE MINT</p>
+                                <p>0.003 GOERLI-ETH/NFT</p>
                                 <p>Max 2 NFT per mint</p>
                                 <p>{_amountMinted} / {_maxSupply}</p>
                             </div>

@@ -496,6 +496,7 @@ body {
 #marquee {
   width: 110%;
   margin-bottom: 60px;
+  transform: rotate(5deg);
 }
 
 .marquee-img {

@@ -16,6 +16,8 @@ export const contract = new web3.eth.Contract(
 
 //SUIVRE PART 4 HELLOWORLD SMART CONTRACT STUFF ALCHEMY
 export const connectWallet = async () => {
+
+    console.log("version: " + web3.version);
     if (window.ethereum) {
         try {
             const addressArray = await window.ethereum.request({
@@ -94,6 +96,8 @@ export const getCurrentWalletConnected = async () => {
 };
 
 export const mint = async (address, amount) => {
+
+    console.log("version: " + web3.version);
     if (!window.ethereum || address === null) {
         return {
             status:
