@@ -14,7 +14,6 @@ export const contract = new web3.eth.Contract(
 
 /************************************************************************************************* */
 
-//SUIVRE PART 4 HELLOWORLD SMART CONTRACT STUFF ALCHEMY
 export const connectWallet = async () => {
 
     console.log("version: " + web3.version);
