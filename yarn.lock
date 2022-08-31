@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@alch/alchemy-web3@^1.4.4":
-  "integrity" "sha512-SuwebUmRGn3U/kNtXQZbwGJt8kSFRcIgqddH0hlH/0SqS5ZdSaPgng5wwIkD53KnK0IbGotvZC9JMc0idFvOtw=="
-  "resolved" "https://registry.npmjs.org/@alch/alchemy-web3/-/alchemy-web3-1.4.4.tgz"
-  "version" "1.4.4"
+"@alch/alchemy-web3@^1.4.6":
+  "integrity" "sha512-eWkWXplQ0b7V62XNfzxBkozOnK6kXgPlQJnnvGsrEzr+DldrtJKnAcSgANpfPyOivztk/26IW4SWtREPHVJwrg=="
+  "resolved" "https://registry.npmjs.org/@alch/alchemy-web3/-/alchemy-web3-1.4.6.tgz"
+  "version" "1.4.6"
   dependencies:
     "@types/web3" "^1.2.2"
     "assert-never" "^1.2.0"

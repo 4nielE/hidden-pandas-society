@@ -171,7 +171,7 @@ function Home() {
             },
             {
                 title: "What chain is Hidden Pandas Society?",
-                content: "Note that this is a Test NFT. Thus, the chain is on Goerli Ethereum."
+                content: "Note that this is a TEST NFT. Thus, the chain is on Goerli Ethereum."
             },
             {
                 title: "When is the mint?",
@@ -179,7 +179,7 @@ function Home() {
             },
             {
                 title: "How much do each Panda cost?",
-                content: "Free MINT!"
+                content: "0.003 GOERLI-ETH"
             },
             {
                 title: "Is there utility?",
